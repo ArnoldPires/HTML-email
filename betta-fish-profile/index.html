@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>Betta Fish Advertisement</title>
-  <link rel="stylesheet" href="style.css">
   <style type="text/css">
   body {
     Margin: 0!important;
@@ -63,18 +62,18 @@
     border-radius: 6px;
     margin-top: 25px;
   }
-  .two-column {
+  .two-col {
     text-align: center;
     font-size: 0;
     padding: 5px 0 10px 0;
   }
-  .two-column .section {
+  .two-col .section {
     width: 100%;
     max-width: 300px;
     display: inline-block;
     vertical-align: top;
   }
-  .two-column .content {
+  .two-col .content {
     font-size: 20px;
     line-height: 35px;
   }
@@ -127,7 +126,7 @@
     background-color: #FFF;
     border-radius: 6px;
   }
-  .one-column .inner-td {
+  .one-col .inner-td {
     font-size: 16px;
     line-height: 20px;
     text-align: justify;
@@ -165,13 +164,13 @@
     padding: 9px 16px;
     border-radius: 28px;
   }
-  .two-column img {
+  .two-col img {
     width: 100%;
     max-width: 280px;
     height: auto;
     display: inline-block;
   }
-  .two-column .text {
+  .two-col .text {
     padding: 10px 0;
   }
   .outer-table-2 {
@@ -181,26 +180,6 @@
     background-color: #C2C1C1;
     border-bottom: 3px solid #81B9C3;
     border-top: 3px solid #81B9C3;
-  }
-  .three-column {
-    text-align: center;
-    font-size: 0;
-    padding: 10px 0 30px 0;
-  }
-  .three-column .section {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  .three-column .content {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .three-column img {
-    width: 100%;
-    max-width: 125px;
-    height: auto;
   }
   .outer-table-2 p {
     margin-top: 6px;
@@ -245,41 +224,37 @@
     Margin: 0 auto;
     color: #FFF;
   }
+  .footer-links {
+  	font-size: 11px;
+  	line-height: 18px;
+  	text-decoration: none;
+    text-align: center;
+  }
+  .footer-links a {
+    color: #999999;
+  }
   .footer  img {
-    max-width: 135px;
-    Margin: 0 auto;
     display: block;
-    padding: 4% 0 1% 0;
+    max-width: 26px;
+    width: 26px;
+    height: 26px;
+    padding-top: 10px;
   }
   p.footer {
     text-align: center;
     color: #FFF!important;
     line-height: 30px;
     padding-bottom: 4%;
-    text-transform: uppercase;
   }
   /*--- Media Queries --*/
   @media screen and (max-width: 400px) {
     .h1 {
       font-size: 22px;
     }
-    .two-column .column, .three-column .column {
-      max-width: 100%!important;
-    }
-    .two-column img {
-      width: 100%!important;
-    }
-    .three-column img {
-      max-width: 60%!important;
-    }
   }
   @media screen and (min-width: 401px) and (max-width: 400px) {
-
-    .two-column .column {
+    .two-col .column {
       max-width: 50%!important;
-    }
-    .three-column .column {
-      max-width: 33%!important;
     }
   }
   @media screen and (max-width:768px) {
@@ -287,32 +262,6 @@
       float:none !important;
       margin-left:0% !important;
       max-width: 200px!important;
-    }
-
-    #callout {
-      float:none !important;
-      margin: 0% 0% 0% 0;
-      height: auto;
-      text-align:center;
-      overflow: hidden;
-    }
-    #callout img {
-      max-width:26px !important;
-    }
-    .two-column .section {
-      width: 100% !important;
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    .two-column img {
-      width: 100% !important;
-      height: auto !important;
-    }
-    img.img-responsive {
-      width:100% !important;
-      height:auto !important;
-      max-width:100% !important;
     }
     .content {
       width: 100%;
@@ -326,7 +275,7 @@
     <div class="wrapper-inner">
       <table class="main-table-first">
         <tr>
-          <td class="two-column">
+          <td class="two-col">
             <div class="section">
               <table width="100%">
                 <tr>
@@ -355,7 +304,7 @@
       </table><!--end of banner image-->
       <table class="main-table">
         <tr>
-          <td class="one-column">
+          <td class="one-col">
             <table width="100%">
               <tr>
                 <td class="inner-td">
@@ -367,7 +316,7 @@
           </td>
         </tr><!--end heading, paragraph and button section -->
         <tr>
-          <td class="two-column">
+          <td class="two-col">
             <div class="section">
               <table width="100%">
                 <tr>
@@ -475,17 +424,36 @@
       </table><!--end of main table-->
       <table class="outer-table-3">
         <tr>
-          <td class="one-column">
-            <table width="100%">
+          <td class="footer" class="pad">
+            <table width="100%" text-align="center">
               <tr>
-                <td class="footer">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Carbonite_Logo.png">
-                  <p class="footer"> 2 Ave de Lafayette, Boston, MA 02111<br>&copy; Carbonite, 2019.<br><a href="index.html#">Unsubscribe</a></p>
+                <td style="padding-bottom:16px;" text-align="center">
+                  <table text-align="center" style="margin: 0 auto">
+                    <tr class="social-media">
+                      <td><a href="#"><img src="facebook.png"></a></td>
+                      <td><a href="#"><img src="twitter.png"></a></td>
+                      <td><a href="#"><img src="youtube.png"></a></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
-            </table>
-          </td>
-        </tr>
+              <tr>
+                <td class="footer-links">
+                  <a href="#">Terms of use</a> |
+                  <a href="#">Privacy policy</a> |
+                  <a href="#">Safety</a> |
+                  <a href="#">Corporate responsibilty</a> |
+                  <a href="#">Sitemap</a> |
+                  <a href="#">Agent</a> |
+                  <a href="#">Investors</a>
+                  <br>
+                  &copy;2019 Carbonite, Inc. All rights reserved.
+                  <br>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
       </table> <!--- End Main Table -->
     </div> <!--- End Wrapper Inner -->
   </div> <!--- End Wrapper -->
