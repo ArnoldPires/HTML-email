@@ -118,24 +118,26 @@ td, a, span {
 	display: none;
 }
 /*--- Media Queries --*/
-@media screen and (max-width: 400px) {
-	.h1 {
-		font-size: 22px;
+@media only screen and (max-width : 1200px) {
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+	.banner-img {
+		width: 600px
 	}
 }
-@media screen and (min-width: 401px) and (max-width: 400px) {
-	.two-col .column {
-		max-width: 50%!important;
-	}
-}
-@media screen and (max-width:768px) {
-	img.logo {
-		float:none !important;
-		margin-left:0% !important;
-		max-width: 200px!important;
-	}
-	.content {
-		width: 100%;
-		padding-top:0px !important;
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 650px) {
+	.banner-img {
+		width: 440px;
 	}
 }
